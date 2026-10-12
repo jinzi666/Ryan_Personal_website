@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- 让页面在手机上正确缩放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 | 我的作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 共用导航栏（四个页面结构一致，只有“当前页”高亮不同） -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">我的作品集</a>
+
+      <!-- 汉堡菜单按钮：手机端显示，点击后展开/收起菜单 -->
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="about.html" class="nav-link">关于我</a></li>
+        <li><a href="projects.html" class="nav-link">项目</a></li>
+        <li><a href="contact.html" class="nav-link">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 首屏：一句自我介绍 + 两个跳转按钮 -->
+    <section class="hero">
+      <!-- 头像占位：用首字代替，之后可换成真实照片 -->
+      <div class="avatar" aria-hidden="true">巩</div>
+      <p class="hero-eyebrow">你好，我是</p>
+      <h1>巩源一</h1>
+      <p class="hero-subtitle">香港的一名学生，喜欢把想法做成能用的东西。</p>
+      <!-- 一段简短自我介绍 -->
+      <p class="hero-intro">
+        我平时写代码、做小工具，也喜欢把学到的东西整理成看得见的项目。
+        这个网站会持续记录我做过的东西和正在学的内容，欢迎常来看看。
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">看看我的项目</a>
+        <a href="contact.html" class="btn btn-outline">联系我</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 巩源 · 用 Codex 和 DeepSeek 搭建</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

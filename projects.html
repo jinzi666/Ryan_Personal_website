@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 | 我的作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">我的作品集</a>
+
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="about.html" class="nav-link">关于我</a></li>
+        <li><a href="projects.html" class="nav-link">项目</a></li>
+        <li><a href="contact.html" class="nav-link">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 项目列表：先用示例卡片占位，之后替换为真实项目 -->
+    <section class="page">
+      <h2>我的项目</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-thumb">项目截图占位</div>
+          <h3>课堂笔记助手</h3>
+          <p>把零散的课堂笔记自动整理成结构化大纲，支持一键导出。项目还带一个搜索页，方便考前快速翻找重点。</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Web</span></div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">在线演示</a>
+            <a href="#" class="btn btn-outline">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">项目截图占位</div>
+          <h3>天气小应用</h3>
+          <p>调用公开天气接口，展示当前天气和未来三天的预报。页面做了响应式设计，手机上看同样清楚。</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">API</span></div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">在线演示</a>
+            <a href="#" class="btn btn-outline">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">项目截图占位</div>
+          <h3>个人作品集网站</h3>
+          <p>你现在看到的这个网站，就是我边学边做的第一个前端项目。纯手写代码，没有使用任何框架。</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">在线演示</a>
+            <a href="#" class="btn btn-outline">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">项目截图占位</div>
+          <h3>待办清单</h3>
+          <p>一个支持增删改查的待办事项小工具，数据保存在浏览器本地。界面简洁，用来练习 DOM 操作和状态管理。</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">本地存储</span></div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">在线演示</a>
+            <a href="#" class="btn btn-outline">GitHub 仓库</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 巩源 · 用 Codex 和 DeepSeek 搭建</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
